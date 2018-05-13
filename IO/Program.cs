@@ -23,9 +23,21 @@ namespace IO {
             var person1 = new Lazy<Person>(()=>new Person(1));
             var person2 = new Lazy<Person>();
 
+            var person3 = new LazyAth2<Person>();
+            Console.WriteLine(person3.GetValue().Age);
+            Console.WriteLine(person3.GetValue().Age);
             foreach (var item in AthFibonaci.Fibonaci().Take(10)) {
                 Console.WriteLine(item);
             }
+            AthApi.GetUsers();
+            Console.WriteLine("o");
+            //foreach (var item in AthApi.GetUsers()) {
+            //    Console.WriteLine(item.Name);
+            //    //foreach (var post in item.Posts) {
+            //    //    //Console.WriteLine(post.Title);
+            //    //}
+            //}
+
         }
     }
 }
